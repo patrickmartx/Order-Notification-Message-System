@@ -15,7 +15,7 @@ public class Order {
     private String productName;
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
-    @Column(name = "order_timestamp", nullable = false)
+    @Column(name = "create_at", nullable = false)
     private OffsetDateTime createAt = OffsetDateTime.now(ZoneId.of("America/Sao_Paulo"));
 
     public UUID getId() {
